@@ -17,6 +17,8 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 def analyze_bias():
     data = request.json
     text = data.get("text", "")
+    print("📥 [DEBUG] Received text (first 300 chars):", text[:300])
+
 
     messages = [
         {
