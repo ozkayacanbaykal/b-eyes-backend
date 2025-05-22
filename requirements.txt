@@ -1,4 +1,6 @@
 flask
+gunicorn
 flask-cors
 openai
 python-dotenv
+
